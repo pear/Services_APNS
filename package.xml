@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Services_Apns</name>
+ <channel>pear.php.net</channel>
+ <summary>Apple Push Notifications Service communication</summary>
+ <description>This package provides an interface for communication with Apple Push Notifications Service (APNS).
+This package allows one to send notifications to registered devices, as well as receiving users feedback through Apple's gateway.</description>
+ <lead>
+  <name>Yahav Gindi Bar</name>
+  <user>yahavgb</user>
+  <email>g.b.yahav@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2013-02-05</date>
+ <time>02:15:28</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license">BSD License</license>
+ <contents>
+  <dir name="/Services_Apns">
+   <file md5sum="e4017d6c78832cd2f46cfc6907ce593e" name="ApnsFeedbackClient.php" role="php" />
+   <file md5sum="602d9bcbb9f3fbc61d080f7c53cb6bd1" name="ApnsMessageClient.php" role="php" />
+  </dir>
+    <dir name="/Services_Apns/Apns">
+    	<file md5sum="b0ee15d34515f290b08fe4d361104b49" name="Message.php" role="php" />
+    	<file md5sum="8088c36354c420c204f244ef1c04d075" name="Exception.php" role="php" />
+    	<file md5sum="555796dfb9b2e0520be9b332fa025a35" name="ApnsAbstractClient.php" role="php" />
+    </dir>
+    <dir name="/Services_Apns/Apns/Message">
+    	<file md5sum="eaebd8934920c1e96cdcb311105c9339" name="Alert.php" role="php" />
+    </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.1</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>
