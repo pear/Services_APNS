@@ -1,0 +1,19 @@
+<?php
+
+/* Set the authorized certificate provided by Apple */
+define('APNS_SSL_CERTIFICATE_FILE_PATH', dirname(__FILE__) . '/aps_developer_identity.pem');
+
+/* Defining the password phrase specified in the Provisioning Portal */
+define('APNS_CERTIFICATE_PASSWORD_PHRASE', 'My top secret password!');
+
+/* Setting the default ENV */
+define('APNS_ENV', Services_Apns_Client::ENV_SANDBOX);
+
+/* Dummy device token */
+define('DUMMY_DEVICE_TOKEN', '... Some device token for testing proposes (you should get it with iOS NSPushNotificationsCenter class) ...');
+
+/* Sound test only: Path to a sound file in the application */
+define('SOUND_TEST_SOUND_FILE_PATH', 'sound.mp3');
+
+/* Alert localized key test: The key name */
+define('ALERT_LOCALIZED_KEY_TEST_KEY_NAME', 'SomeKeyDefinedInAppLocalizationPlist');
