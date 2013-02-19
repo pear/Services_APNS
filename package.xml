@@ -38,8 +38,22 @@ name="Services/Apns/Exception.php" role="php" />
 name="Services/Apns/Message.php" role="php" />
     <file baseinstalldir="/" md5sum="3ee42abd9bd03012e6e56267f65d0aa2" 
 name="Services/Apns/Client/Feedback.php" role="php" />
-    <file md5sum="2ffad505dfc3d26f49e4993ea3f1adcd" 
+    <file baseinstalldir="/" md5sum="2ffad505dfc3d26f49e4993ea3f1adcd" 
 name="Services/Apns/Client/Message.php" role="php" />
+    <file baseinstalldir="/" md5sum="0ede98d5e68c077b4b5795f55275a900" 
+name="examples/index.php" role="doc" />
+    <file baseinstalldir="/" md5sum="430b1d318a1d45b3ecd6955aa64aca2a" 
+name="tests/AllTests.php" role="test" />
+    <file baseinstalldir="/" md5sum="013e953f96a635bb27cbc1f652500ca9" 
+name="tests/config.php.dist" role="cfg" />
+    <file baseinstalldir="/" md5sum="9a8675d518a110d534ebff92773357f3" 
+name="tests/Feedback.php" role="test" />
+    <file baseinstalldir="/" md5sum="20a86d373c887b233583f2958dbe0e3f" 
+name="tests/Message.php" role="test" />
+    <file baseinstalldir="/" md5sum="fbeb4768044646ea79858c6ebe26ad11" 
+name="README.md" role="doc" />
+    <file baseinstalldir="/" md5sum="f44eb489eb47391f7f8b96c8501c33f5" 
+name="LICENSE.txt" role="doc" />
   </dir>
  </contents>
  <dependencies>
