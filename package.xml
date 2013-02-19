@@ -11,8 +11,8 @@ This package allows one to send notifications to registered devices, as well as 
   <email>g.b.yahav@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2013-02-05</date>
- <time>02:15:28</time>
+ <date>2013-02-19</date>
+ <time>15:34:28</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -22,17 +22,25 @@ This package allows one to send notifications to registered devices, as well as 
   <api>beta</api>
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license">BSD License</license>
+ <notes>
+  * Initial Release
+ </notes>
  <contents>
-  <dir name="/Services/Apns">
-   <file md5sum="058f127edf43bb8e91c5d9bf7cfeb328" name="Alert.php" role="php" />
-   <file md5sum="788c505f145d24488555500327914b78" name="Client.php" role="php" />
-   <file md5sum="ecf0947787c7d4aa89383d41b34d9c91" name="Exception.php" role="php" />
-   <file md5sum="087b63f04364b0323084e19271a9610c" name="Message.php" role="php" />
+  <dir name="/" baseinstalldir="/">
+   <file baseinstalldir="/" md5sum="058f127edf43bb8e91c5d9bf7cfeb328" 
+name="Services/Apns/Alert.php" 
+role="php" />
+   <file baseinstalldir="/" md5sum="788c505f145d24488555500327914b78" 
+name="Services/Apns/Client.php" role="php" />
+   <file baseinstalldir="/" md5sum="ecf0947787c7d4aa89383d41b34d9c91" 
+name="Services/Apns/Exception.php" role="php" />
+   <file basinstalldir="/" md5sum="087b63f04364b0323084e19271a9610c" 
+name="Services/Apns/Message.php" role="php" />
+    <file baseinstalldir="/" md5sum="3ee42abd9bd03012e6e56267f65d0aa2" 
+name="Services/Apns/Client/Feedback.php" role="php" />
+    <file md5sum="2ffad505dfc3d26f49e4993ea3f1adcd" 
+name="Services/Apns/Client/Message.php" role="php" />
   </dir>
-    <dir name="/Services/Apns/Client">
-    	<file md5sum="3ee42abd9bd03012e6e56267f65d0aa2" name="Feedback.php" role="php" />
-    	<file md5sum="2ffad505dfc3d26f49e4993ea3f1adcd" name="Message.php" role="php" />
-    </dir>
  </contents>
  <dependencies>
   <required>
@@ -44,11 +52,9 @@ This package allows one to send notifications to registered devices, as well as 
    </pearinstaller>
   </required>
   <optional>
-   <group name="mbstring" hint="Add support for Multibyte string messaging">
-	 <extension>
-	  <name>mbstring</name>
-	 </extension>
-	</group>
+      <extension>
+         <name>mbstring</name>
+      </extension>
   </optional>
  </dependencies>
  <phprelease />
