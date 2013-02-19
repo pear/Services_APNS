@@ -23,17 +23,15 @@ This package allows one to send notifications to registered devices, as well as 
  </stability>
  <license uri="http://www.opensource.org/licenses/bsd-license">BSD License</license>
  <contents>
-  <dir name="/Services_Apns">
-   <file md5sum="e4017d6c78832cd2f46cfc6907ce593e" name="ApnsFeedbackClient.php" role="php" />
-   <file md5sum="602d9bcbb9f3fbc61d080f7c53cb6bd1" name="ApnsMessageClient.php" role="php" />
+  <dir name="/Services/Apns">
+   <file md5sum="058f127edf43bb8e91c5d9bf7cfeb328" name="Alert.php" role="php" />
+   <file md5sum="788c505f145d24488555500327914b78" name="Client.php" role="php" />
+   <file md5sum="ecf0947787c7d4aa89383d41b34d9c91" name="Exception.php" role="php" />
+   <file md5sum="087b63f04364b0323084e19271a9610c" name="Message.php" role="php" />
   </dir>
-    <dir name="/Services_Apns/Apns">
-    	<file md5sum="b0ee15d34515f290b08fe4d361104b49" name="Message.php" role="php" />
-    	<file md5sum="8088c36354c420c204f244ef1c04d075" name="Exception.php" role="php" />
-    	<file md5sum="555796dfb9b2e0520be9b332fa025a35" name="ApnsAbstractClient.php" role="php" />
-    </dir>
-    <dir name="/Services_Apns/Apns/Message">
-    	<file md5sum="eaebd8934920c1e96cdcb311105c9339" name="Alert.php" role="php" />
+    <dir name="/Services/Apns/Client">
+    	<file md5sum="3ee42abd9bd03012e6e56267f65d0aa2" name="Feedback.php" role="php" />
+    	<file md5sum="2ffad505dfc3d26f49e4993ea3f1adcd" name="Message.php" role="php" />
     </dir>
  </contents>
  <dependencies>
@@ -45,6 +43,13 @@ This package allows one to send notifications to registered devices, as well as 
     <min>1.4.0b1</min>
    </pearinstaller>
   </required>
+  <optional>
+   <group name="mbstring" hint="Add support for Multibyte string messaging">
+	 <extension>
+	  <name>mbstring</name>
+	 </extension>
+	</group>
+  </optional>
  </dependencies>
  <phprelease />
 </package>

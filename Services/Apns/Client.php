@@ -111,7 +111,7 @@ abstract class Services_Apns_Client
      * each time from the stream.
      * @var int
      */
-    const SOCKET_READ_BYTES = 1024;
+    const SOCKET_READ_BYTES = 8192;
     
     // }}}
     

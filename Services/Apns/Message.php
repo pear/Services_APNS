@@ -370,7 +370,7 @@ class Services_Apns_Message
         $payload = $this->getPayload();
         
         // Use mb_strlen for multi-byte characters in case it's available
-        if (defined('JSON_UNESCAPED_UNICODE') && function_exists('mb_strlen')) {
+        if (defined('JSON_UNESCAPED_UNICODE') && extension_loaded('mbstring')) {
             $payload = json_encode($payload, JSON_UNESCAPED_UNICODE);
             $length = mb_strlen($length, 'UTF-8');
         } else {
