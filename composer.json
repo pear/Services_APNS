@@ -7,12 +7,13 @@
         }
     ],
     "autoload": {
-        "classmap": [
-            "./"
-        ]
+        "psr-0": {
+            "Services": "./"
+        }
     },
     "description": "Open Source PEAR Package for Apple Push Notifications Service communication",
-    "license": "BSD License",
+    "homepage": "http://pear.php.net/package/Services_Apns",
+    "license": "BSD-2-Clause",
     "name": "pear/services_apns",
     "support": {
         "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Services_Apns",
@@ -21,9 +22,6 @@
     "type": "library",
     "suggest": {
         "ext-mbstring": "May require the mbstring PHP extension"
-    },
-    "require": {
-        "pear/pear_exception": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
